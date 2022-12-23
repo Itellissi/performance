@@ -1,0 +1,19 @@
+apiVersion: dapr.io/v1alpha1
+kind: Component
+metadata:
+  name: redis-pubsub
+spec:
+  type: pubsub.redis
+  version: v1
+  metadata:
+  - name: redisHost
+    value: localhost:6379
+  - name: consumerID
+    value: "myGroup"
+  - name: enableTLS
+    value: "false"
+  # Slightly better performance for large messages
+  # - name: poolSize
+  #   value: "20"
+  # - name: minIdleConns
+  #   value: "5"
