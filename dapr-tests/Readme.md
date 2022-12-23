@@ -26,5 +26,5 @@ Jmeter test scenario has 5 variables:
 - loopCount : the loop count for the thread group
 - threadCount : the number of parallel threads
 
-The JMeter tests sends 2 "lorem ipsum" messages, one of size 30Kb and the other has 2Kb, with a configurable sleep time between each.
+The JMeter test sends 2 "lorem ipsum" messages, one of size 30Kb and the other has 2Kb, with a configurable sleep time between each.
 
